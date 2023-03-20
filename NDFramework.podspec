@@ -91,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "NDFramework", "NDFramework/**/*.{h,m}"
-  spec.exclude_files = "NDFramework"
+  spec.source_files  =  "NDFramework/*.{swift}"
+  # spec.exclude_files = "NDFramework"
 
   # spec.public_header_files = "Classes/**/*.h"
 
