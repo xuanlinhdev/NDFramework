@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F90AF14A29C80545003FB7B9 /* NDFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F90AF14929C80545003FB7B9 /* NDFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F90AF15129C8061A003FB7B9 /* ColorSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90AF15029C8061A003FB7B9 /* ColorSelectorView.swift */; };
+		F90AF19B29C81662003FB7B9 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90AF19A29C81662003FB7B9 /* HelloWorld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F90AF14629C80545003FB7B9 /* NDFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90AF14929C80545003FB7B9 /* NDFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDFramework.h; sourceTree = "<group>"; };
+		F90AF15029C8061A003FB7B9 /* ColorSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectorView.swift; sourceTree = "<group>"; };
+		F90AF19A29C81662003FB7B9 /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +49,9 @@
 		F90AF14829C80545003FB7B9 /* NDFramework */ = {
 			isa = PBXGroup;
 			children = (
+				F90AF19A29C81662003FB7B9 /* HelloWorld.swift */,
 				F90AF14929C80545003FB7B9 /* NDFramework.h */,
+				F90AF15029C8061A003FB7B9 /* ColorSelectorView.swift */,
 			);
 			path = NDFramework;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 				TargetAttributes = {
 					F90AF14529C80545003FB7B9 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -129,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90AF15129C8061A003FB7B9 /* ColorSelectorView.swift in Sources */,
+				F90AF19B29C81662003FB7B9 /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,7 @@
 		F90AF14E29C80545003FB7B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		F90AF14F29C80545003FB7B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
