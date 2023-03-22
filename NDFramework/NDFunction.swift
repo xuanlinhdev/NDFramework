@@ -33,7 +33,7 @@ public class NDFunction{
                 DispatchQueue.main.async {
                     // Thực hiện các hoạt động trên main thread
                     if (item.success) {
-                        self.ShowAler()
+                        self.ShowAler(message: item.message)
                     }
                 }
             } catch {
@@ -42,8 +42,8 @@ public class NDFunction{
         }).resume()
     }
     
-    func ShowAler(){
-        let alert = UIAlertController(title: "Thông báo", message: "Đây là một thông báo", preferredStyle: .alert)
+    func ShowAler(message:String){
+        let alert = UIAlertController(title: "Thông báo", message: message, preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default)
             alert.addAction(okAction)
 
@@ -54,5 +54,5 @@ public class NDFunction{
 }
 class ResponseModel: Codable, Identifiable {
         var success: Bool = true
-        var message: String? = ""
+        var message: String = ""
     }
